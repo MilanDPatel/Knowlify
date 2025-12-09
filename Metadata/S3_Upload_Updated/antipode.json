@@ -1,0 +1,11 @@
+{
+    "topic": "the concept of a 3D scene.",
+    "code": [
+        "from manim_imports_ext import *\n",
+        "\n",
+        "\n",
+        "class NewSceneName(ThreeDScene):\n",
+        "    def construct(self):\n",
+        "        pass\n"
+    ]
+}

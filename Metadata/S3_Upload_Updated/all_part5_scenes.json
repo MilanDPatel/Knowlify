@@ -1,0 +1,10 @@
+{
+    "topic": "demonstrates the concept of a binary tree traversal algorithm.",
+    "code": [
+        "from _2019.diffyq.part5.staging import *\n",
+        "\n",
+        "OUTPUT_DIRECTORY = \"diffyq/part5\"\n",
+        "SCENES_IN_ORDER = [\n",
+        "]"
+    ]
+}

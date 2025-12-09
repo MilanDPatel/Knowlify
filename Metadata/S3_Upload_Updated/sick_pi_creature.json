@@ -1,0 +1,27 @@
+{
+    "topic": "demonstrates the concept of a \"Sickly Pi Creature\" and its various states",
+    "code": [
+        "\n",
+        "from for_3b1b_videos.pi_creature import *\n",
+        "from _2018.eop.reusables.eop_constants import *\n",
+        "\n",
+        "\n",
+        "class SicklyPiCreature(PiCreature):\n",
+        "    CONFIG = {\n",
+        "        \"sick_color\": SICKLY_GREEN\n",
+        "    }\n",
+        "\n",
+        "    def get_slightly_sick(self):\n",
+        "\n",
+        "        self.save_state()\n",
+        "        self.set_color(self.sick_color)\n",
+        "\n",
+        "    def get_sick(self):\n",
+        "\n",
+        "        self.get_slightly_sick()\n",
+        "        self.change_mode(\"sick\")\n",
+        "\n",
+        "    def get_better(self):\n",
+        "        self.restore()"
+    ]
+}

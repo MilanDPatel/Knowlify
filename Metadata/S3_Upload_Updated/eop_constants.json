@@ -1,0 +1,29 @@
+{
+    "topic": "demonstrates the creation of a coin tallying system, with different colors and dimensions for",
+    "code": [
+        "\n",
+        "from constants import *\n",
+        "\n",
+        "COIN_RADIUS = 0.18\n",
+        "COIN_THICKNESS = 0.4 * COIN_RADIUS\n",
+        "COIN_FORESHORTENING = 0.5\n",
+        "COIN_NB_RIDGES = 20\n",
+        "COIN_STROKE_WIDTH = 2\n",
+        "\n",
+        "COIN_SEQUENCE_SPACING = 0.1\n",
+        "\n",
+        "GRADE_COLOR_1 = COLOR_HEADS = RED_E\n",
+        "GRADE_COLOR_2 = COLOR_TAILS = BLUE_C\n",
+        "\n",
+        "COLOR_HEADS_COIN = RED\n",
+        "COLOR_TAILS_COIN = BLUE_E\n",
+        "\n",
+        "TALLY_BACKGROUND_WIDTH = 1.0\n",
+        "TALLY_BACKGROUND_COLOR = BLACK\n",
+        "\n",
+        "SICKLY_GREEN = \"#9BBD37\"\n",
+        "\n",
+        "OUTCOME_COLOR = WHITE\n",
+        "OUTCOME_OPACITY = 0.5"
+    ]
+}

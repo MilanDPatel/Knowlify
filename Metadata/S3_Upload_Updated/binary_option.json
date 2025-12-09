@@ -1,0 +1,20 @@
+{
+    "topic": "the concept of binary options.",
+    "code": [
+        "from mobject.types.vectorized_mobject import *\n",
+        "from mobject.svg.tex_mobject import *\n",
+        "\n",
+        "class BinaryOption(VMobject):\n",
+        "    CONFIG = {\n",
+        "    \"text_scale\" : 0.5\n",
+        "    }\n",
+        "\n",
+        "    def __init__(self, mob1, mob2, **kwargs):\n",
+        "\n",
+        "        VMobject.__init__(self, **kwargs)\n",
+        "        text = OldTexText(\"or\").scale(self.text_scale)\n",
+        "        mob1.next_to(text, LEFT)\n",
+        "        mob2.next_to(text, RIGHT)\n",
+        "        self.add(mob1, text, mob2)\n"
+    ]
+}
