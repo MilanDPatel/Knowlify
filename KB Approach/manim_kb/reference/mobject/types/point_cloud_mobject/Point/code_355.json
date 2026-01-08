@@ -1,0 +1,17 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ExamplePoint(Scene):",
+    "    def construct(self):",
+    "        colorList = [RED, GREEN, BLUE, YELLOW]",
+    "        for i in range(200):",
+    "            point = Point(location=[0.63 * np.random.randint(-4, 4), 0.37 * np.random.randint(-4, 4), 0], color=np.random.choice(colorList))",
+    "            self.add(point)",
+    "        for i in range(200):",
+    "            point = Point(location=[0.37 * np.random.randint(-4, 4), 0.63 * np.random.randint(-4, 4), 0], color=np.random.choice(colorList))",
+    "            self.add(point)",
+    "        self.add(point)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.types.point_cloud_mobject.Point.html"
+}

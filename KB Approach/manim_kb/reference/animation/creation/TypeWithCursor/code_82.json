@@ -1,0 +1,20 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class InsertingTextExample(Scene):",
+    "    def construct(self):",
+    "        text = Text(\"Inserting\", color=PURPLE).scale(1.5).to_edge(LEFT)",
+    "        cursor = Rectangle(",
+    "            color = GREY_A,",
+    "            fill_color = GREY_A,",
+    "            fill_opacity = 1.0,",
+    "            height = 1.1,",
+    "            width = 0.5,",
+    "        ).move_to(text[0]) # Position the cursor",
+    "",
+    "        self.play(TypeWithCursor(text, cursor))",
+    "        self.play(Blink(cursor, blinks=2))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.creation.TypeWithCursor.html"
+}

@@ -1,0 +1,8 @@
+{
+  "code": [
+    ">>> from manim import XKCD",
+    ">>> XKCD.MANGO",
+    "ManimColor('#FFA62B')"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.XKCD.html"
+}

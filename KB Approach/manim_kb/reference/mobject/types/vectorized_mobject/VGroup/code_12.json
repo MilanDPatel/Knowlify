@@ -1,0 +1,17 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class AddIterableToVGroupExample(Scene):",
+    "    def construct(self):",
+    "        v = VGroup(",
+    "            Square(),               # Singular VMobject instance",
+    "            [Circle(), Triangle()], # List of VMobject instances",
+    "            Dot(),",
+    "            (Dot() for _ in range(2)), # Iterable that generates VMobjects",
+    "        )",
+    "        v.arrange()",
+    "        self.add(v)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VGroup.html"
+}

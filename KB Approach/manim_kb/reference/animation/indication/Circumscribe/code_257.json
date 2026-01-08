@@ -1,0 +1,16 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class UsingCircumscribe(Scene):",
+    "    def construct(self):",
+    "        lbl = Tex(r\"Circum-\\\\scribe\").scale(2)",
+    "        self.add(lbl)",
+    "        self.play(Circumscribe(lbl))",
+    "        self.play(Circumscribe(lbl, Circle))",
+    "        self.play(Circumscribe(lbl, fade_out=True))",
+    "        self.play(Circumscribe(lbl, time_width=2))",
+    "        self.play(Circumscribe(lbl, Circle, True))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.indication.Circumscribe.html"
+}

@@ -1,0 +1,13 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class PolarGraphExample(Scene):",
+    "    def construct(self):",
+    "        plane = PolarPlane()",
+    "        r = lambda theta: 2 * np.sin(theta * 5)",
+    "        graph = plane.plot_polar_graph(r, [0, 2 * PI], color=ORANGE)",
+    "        self.add(plane, graph)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.CoordinateSystem.html"
+}

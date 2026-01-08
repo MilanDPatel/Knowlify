@@ -1,0 +1,20 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class LabeledLineExample(Scene):",
+    "    def construct(self):",
+    "        line = LabeledLine(",
+    "            label          = '0.5',",
+    "            label_position = 0.8,",
+    "            label_config = {",
+    "                \"font_size\" : 20",
+    "            },",
+    "            start=LEFT+DOWN,",
+    "            end=RIGHT+UP)",
+    "",
+    "        line.set_length(line.get_length() * 2)",
+    "        self.add(line)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.labeled.LabeledLine.html"
+}

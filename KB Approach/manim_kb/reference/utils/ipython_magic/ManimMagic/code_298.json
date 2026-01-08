@@ -1,0 +1,10 @@
+{
+  "code": [
+    "%%manim [CLI options] MyAwesomeScene",
+    "",
+    "class MyAweseomeScene(Scene):",
+    "    def construct(self):",
+    "        ..."
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.ipython_magic.ManimMagic.html"
+}

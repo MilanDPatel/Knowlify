@@ -1,0 +1,11 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class SetSheen(Scene):",
+    "    def construct(self):",
+    "        circle = Circle(fill_opacity=1).set_sheen(-0.3, DR)",
+    "        self.add(circle)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VMobject.html"
+}

@@ -1,0 +1,13 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ExampleLine3D(ThreeDScene):",
+    "    def construct(self):",
+    "        axes = ThreeDAxes()",
+    "        line = Line3D(start=np.array([0, 0, 0]), end=np.array([2, 2, 2]))",
+    "        self.set_camera_orientation(phi=75 * DEGREES, theta=30 * DEGREES)",
+    "        self.add(axes, line)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.three_d.three_dimensions.Line3D.html"
+}

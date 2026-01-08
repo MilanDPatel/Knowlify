@@ -1,0 +1,10 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ShowDrawBorderThenFill(Scene):",
+    "    def construct(self):",
+    "        self.play(DrawBorderThenFill(Square(fill_opacity=1, fill_color=ORANGE)))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.creation.DrawBorderThenFill.html"
+}

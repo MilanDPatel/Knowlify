@@ -1,0 +1,13 @@
+{
+  "code": [
+    ">>> from manim import Rectangle, Line, ORIGIN, RIGHT",
+    ">>> rect = Rectangle(width=4.0, height=2.0, grid_xstep=1.0, grid_ystep=0.5)",
+    ">>> line = Line(start=ORIGIN,end=RIGHT)",
+    ">>> line.align_data(rect)",
+    ">>> len(line.get_family()) == len(rect.get_family())",
+    "True",
+    ">>> line.get_num_points() == rect.get_num_points()",
+    "True"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html"
+}

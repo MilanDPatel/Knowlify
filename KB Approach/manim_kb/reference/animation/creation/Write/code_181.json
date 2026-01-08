@@ -1,0 +1,8 @@
+{
+  "code": [
+    ">>> from manim import Write, Text",
+    ">>> Write(Text(''))",
+    "Write(Text(''))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.creation.Write.html"
+}

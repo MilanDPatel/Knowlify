@@ -1,0 +1,14 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class GetAxisLabelsExample(Scene):",
+    "    def construct(self):",
+    "        ax = Axes()",
+    "        labels = ax.get_axis_labels(",
+    "            Tex(\"x-axis\").scale(0.7), Text(\"y-axis\").scale(0.45)",
+    "        )",
+    "        self.add(ax, labels)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.Axes.html"
+}

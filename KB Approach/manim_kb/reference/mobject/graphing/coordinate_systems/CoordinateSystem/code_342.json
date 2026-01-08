@@ -1,0 +1,17 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class InputToGraphPointExample(Scene):",
+    "    def construct(self):",
+    "        ax = Axes()",
+    "        curve = ax.plot(lambda x : np.cos(x))",
+    "",
+    "        # move a square to PI on the cosine curve.",
+    "        position = ax.input_to_graph_point(x=PI, graph=curve)",
+    "        sq = Square(side_length=1, color=YELLOW).move_to(position)",
+    "",
+    "        self.add(ax, curve, sq)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.CoordinateSystem.html"
+}

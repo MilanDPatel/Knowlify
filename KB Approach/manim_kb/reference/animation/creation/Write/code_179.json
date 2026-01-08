@@ -1,0 +1,10 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ShowWrite(Scene):",
+    "    def construct(self):",
+    "        self.play(Write(Text(\"Hello\", font_size=144)))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.creation.Write.html"
+}

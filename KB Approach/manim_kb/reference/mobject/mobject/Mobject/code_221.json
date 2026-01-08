@@ -1,0 +1,15 @@
+{
+  "code": [
+    ">>> from manim import *",
+    ">>> sq = Square()",
+    ">>> sq.height",
+    "np.float64(2.0)",
+    ">>> sq.scale_to_fit_width(5)",
+    "Square",
+    ">>> sq.width",
+    "np.float64(5.0)",
+    ">>> sq.height",
+    "np.float64(5.0)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html"
+}

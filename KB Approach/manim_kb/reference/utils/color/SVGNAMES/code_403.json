@@ -1,0 +1,8 @@
+{
+  "code": [
+    ">>> from manim import SVGNAMES",
+    ">>> SVGNAMES.LIGHTCORAL",
+    "ManimColor('#EF7F7F')"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.SVGNAMES.html"
+}

@@ -1,0 +1,12 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class UsingIndicate(Scene):",
+    "    def construct(self):",
+    "        tex = Tex(\"Indicate\").scale(3)",
+    "        self.play(Indicate(tex))",
+    "        self.wait()"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.indication.Indicate.html"
+}

@@ -1,0 +1,11 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ExampleCross(Scene):",
+    "    def construct(self):",
+    "        cross = Cross()",
+    "        self.add(cross)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.shape_matchers.Cross.html"
+}

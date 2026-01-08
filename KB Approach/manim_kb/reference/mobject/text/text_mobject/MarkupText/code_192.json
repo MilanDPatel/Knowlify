@@ -1,0 +1,13 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class NoLigaturesExample(Scene):",
+    "    def construct(self):",
+    "        text1 = MarkupText('fl<gradient from=\"RED\" to=\"GREEN\">oat</gradient>ing')",
+    "        text2 = MarkupText('fl<gradient from=\"RED\" to=\"GREEN\">oat</gradient>ing', disable_ligatures=True)",
+    "        group = VGroup(text1, text2).arrange(DOWN)",
+    "        self.add(group)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.text.text_mobject.MarkupText.html"
+}

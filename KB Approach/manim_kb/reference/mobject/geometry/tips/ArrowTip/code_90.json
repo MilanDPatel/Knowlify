@@ -1,0 +1,9 @@
+{
+  "code": [
+    ">>> from manim import Arrow",
+    ">>> arrow = Arrow(np.array([0, 0, 0]), np.array([2, 0, 0]), buff=0)",
+    ">>> arrow.tip.base.round(2) + 0.  # add 0. to avoid negative 0 in output",
+    "array([1.65, 0.  , 0.  ])"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowTip.html"
+}

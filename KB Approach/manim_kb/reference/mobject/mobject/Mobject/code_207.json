@@ -1,0 +1,9 @@
+{
+  "code": [
+    ">>> from manim import Rectangle, Circle",
+    ">>> import numpy as np",
+    ">>> rect = Rectangle(height=2, width=4)",
+    ">>> circ = Circle(radius=3)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html"
+}

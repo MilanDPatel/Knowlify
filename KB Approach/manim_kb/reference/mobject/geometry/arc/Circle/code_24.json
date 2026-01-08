@@ -1,0 +1,16 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class CircleFromPointsExample(Scene):",
+    "    def construct(self):",
+    "        circle = Circle.from_three_points(LEFT, LEFT + UP, UP * 2, color=RED)",
+    "        dots = VGroup(",
+    "            Dot(LEFT),",
+    "            Dot(LEFT + UP),",
+    "            Dot(UP * 2),",
+    "        )",
+    "        self.add(NumberPlane(), circle, dots)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.Circle.html"
+}

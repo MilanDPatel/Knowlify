@@ -1,0 +1,10 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class CreateScene(Scene):",
+    "    def construct(self):",
+    "        self.play(Create(Square()))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.creation.Create.html"
+}

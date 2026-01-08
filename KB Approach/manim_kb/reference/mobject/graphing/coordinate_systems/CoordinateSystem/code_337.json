@@ -1,0 +1,16 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class GetVerticalLineExample(Scene):",
+    "    def construct(self):",
+    "        ax = Axes().add_coordinates()",
+    "        point = ax.coords_to_point(-3.5, 2)",
+    "",
+    "        dot = Dot(point)",
+    "        line = ax.get_vertical_line(point, line_config={\"dashed_ratio\": 0.85})",
+    "",
+    "        self.add(ax, line, dot)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.CoordinateSystem.html"
+}

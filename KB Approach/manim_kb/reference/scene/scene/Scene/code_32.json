@@ -1,0 +1,8 @@
+{
+  "code": [
+    "class MyScene(Scene):",
+    "    def construct(self):",
+    "        self.play(Write(Text(\"Hello World!\")))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.scene.scene.Scene.html"
+}

@@ -1,0 +1,11 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class MarkupExample(Scene):",
+    "    def construct(self):",
+    "        text = MarkupText('<span foreground=\"blue\" size=\"x-large\">Blue text</span> is <i>cool</i>!\"')",
+    "        self.add(text)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.text.text_mobject.MarkupText.html"
+}

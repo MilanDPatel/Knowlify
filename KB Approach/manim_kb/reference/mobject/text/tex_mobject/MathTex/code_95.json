@@ -1,0 +1,11 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class Formula(Scene):",
+    "    def construct(self):",
+    "        t = MathTex(r\"\\int_a^b f'(x) dx = f(b)- f(a)\")",
+    "        self.add(t)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.MathTex.html"
+}

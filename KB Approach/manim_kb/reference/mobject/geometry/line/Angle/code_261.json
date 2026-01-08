@@ -1,0 +1,12 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class AngleFromThreePointsExample(Scene):",
+    "    def construct(self):",
+    "        sample_angle = Angle.from_three_points(UP, ORIGIN, LEFT)",
+    "        red_angle = Angle.from_three_points(LEFT + UP, ORIGIN, RIGHT, radius=.8, quadrant=(-1,-1), color=RED, stroke_width=8, other_angle=True)",
+    "        self.add(red_angle, sample_angle)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.line.Angle.html"
+}

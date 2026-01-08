@@ -1,0 +1,13 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ImageFromArray(Scene):",
+    "    def construct(self):",
+    "        image = ImageMobject(np.uint8([[0, 100, 30, 200],",
+    "                                       [255, 0, 5, 33]]))",
+    "        image.height = 7",
+    "        self.add(image)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.types.image_mobject.ImageMobject.html"
+}

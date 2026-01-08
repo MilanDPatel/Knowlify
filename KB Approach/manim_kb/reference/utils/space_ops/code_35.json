@@ -1,0 +1,13 @@
+{
+  "code": [
+    ">>> from manim import Square, get_winding_number",
+    ">>> polygon = Square()",
+    ">>> get_winding_number(polygon.get_vertices())",
+    "np.float64(1.0)",
+    ">>> polygon.shift(2 * UP)",
+    "Square",
+    ">>> get_winding_number(polygon.get_vertices())",
+    "np.float64(0.0)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.space_ops.html"
+}

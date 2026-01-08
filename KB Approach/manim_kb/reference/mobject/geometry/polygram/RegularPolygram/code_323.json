@@ -1,0 +1,11 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class RegularPolygramExample(Scene):",
+    "    def construct(self):",
+    "        pentagram = RegularPolygram(5, radius=2)",
+    "        self.add(pentagram)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.RegularPolygram.html"
+}

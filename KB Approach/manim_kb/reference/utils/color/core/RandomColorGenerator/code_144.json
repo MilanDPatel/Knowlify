@@ -1,0 +1,9 @@
+{
+  "code": [
+    ">>> from manim import RandomColorGenerator, RED",
+    ">>> rnd = RandomColorGenerator(sample_colors=[RED])",
+    ">>> rnd.next()",
+    "ManimColor('#FC6255')"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.core.RandomColorGenerator.html"
+}

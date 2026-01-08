@@ -1,0 +1,15 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class DtUpdater(Scene):",
+    "    def construct(self):",
+    "        square = Square()",
+    "",
+    "        #Let the square rotate 90° per second",
+    "        square.add_updater(lambda mobject, dt: mobject.rotate(dt*90*DEGREES))",
+    "        self.add(square)",
+    "        self.wait(2)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html"
+}

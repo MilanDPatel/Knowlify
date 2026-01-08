@@ -1,0 +1,14 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "import manim",
+    "",
+    "class TitleExample(Scene):",
+    "    def construct(self):",
+    "        banner = ManimBanner()",
+    "        title = Title(f\"Manim version {manim.__version__}\")",
+    "        self.add(banner, title)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.text.tex_mobject.Title.html"
+}

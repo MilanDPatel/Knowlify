@@ -1,0 +1,18 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class HeightExample(Scene):",
+    "    def construct(self):",
+    "        decimal = DecimalNumber().to_edge(UP)",
+    "        rect = Rectangle(color=BLUE)",
+    "        rect_copy = rect.copy().set_stroke(GRAY, opacity=0.5)",
+    "",
+    "        decimal.add_updater(lambda d: d.set_value(rect.height))",
+    "",
+    "        self.add(rect_copy, rect, decimal)",
+    "        self.play(rect.animate.set(height=5))",
+    "        self.wait()"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html"
+}

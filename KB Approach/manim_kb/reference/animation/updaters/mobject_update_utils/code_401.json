@@ -1,0 +1,19 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class ShiftingSquare(Scene):",
+    "    def construct(self):",
+    "        sq = Square().set_fill(opacity=1)",
+    "        tri = Triangle()",
+    "        VGroup(sq, tri).arrange(LEFT)",
+    "",
+    "        # construct a square which is continuously",
+    "        # shifted to the right",
+    "        always_shift(sq, RIGHT, rate=5)",
+    "",
+    "        self.add(sq)",
+    "        self.play(tri.animate.set_fill(opacity=1))"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.animation.updaters.mobject_update_utils.html"
+}

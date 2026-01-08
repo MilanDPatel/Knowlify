@@ -1,0 +1,10 @@
+{
+  "code": [
+    ">>> from manim import Axes",
+    ">>> ax = Axes()",
+    ">>> parabola = ax.plot(lambda x: x**2)",
+    ">>> ax.input_to_graph_coords(x=3, graph=parabola)",
+    "(3, 9)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.graphing.coordinate_systems.CoordinateSystem.html"
+}

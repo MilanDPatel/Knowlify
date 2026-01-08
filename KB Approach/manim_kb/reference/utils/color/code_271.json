@@ -1,0 +1,8 @@
+{
+  "code": [
+    ">>> from manim import XKCD",
+    ">>> XKCD.AVOCADO",
+    "ManimColor('#90B134')"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.html"
+}

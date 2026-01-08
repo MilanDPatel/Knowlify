@@ -1,0 +1,15 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class StarExample(Scene):",
+    "    def construct(self):",
+    "        pentagram = RegularPolygram(5, radius=2)",
+    "        star = Star(outer_radius=2, color=RED)",
+    "",
+    "        self.add(pentagram)",
+    "        self.play(Create(star), run_time=3)",
+    "        self.play(FadeOut(star), run_time=2)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Star.html"
+}

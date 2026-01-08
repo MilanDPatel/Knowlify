@@ -1,0 +1,17 @@
+{
+  "code": [
+    "from manim import *",
+    "",
+    "class PolygramRoundCorners(Scene):",
+    "    def construct(self):",
+    "        star = Star(outer_radius=2)",
+    "",
+    "        shapes = VGroup(star)",
+    "        shapes.add(star.copy().round_corners(radius=0.1))",
+    "        shapes.add(star.copy().round_corners(radius=0.25))",
+    "",
+    "        shapes.arrange(RIGHT)",
+    "        self.add(shapes)"
+  ],
+  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.polygram.Polygram.html"
+}
