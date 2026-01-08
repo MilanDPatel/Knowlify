@@ -19,6 +19,56 @@ The videos are in **horizontal format** (1920*1080, landscape orientation). The 
 - **Standard layout conventions** apply — titles at top, content in center
 - **Text and objects should be sized appropriately** for standard screens
 
+## CRITICAL: Voiceover Integration with Kokoro TTS
+**Your Scene class MUST inherit from `VoiceoverScene` and use Kokoro TTS for narration:**
+
+### Required Setup:
+```python
+class MyScene(VoiceoverScene):
+    def construct(self):
+        # Initialize Kokoro TTS service at the start
+        self.set_speech_service(KokoroService(voice="af_sarah", lang="en-us"))
+        
+        # Then proceed with your animations...
+```
+
+### Voiceover Usage Pattern:
+Each storyboard scene includes a **narration** field. Wrap the scene's animations with the voiceover context:
+
+```python
+with self.voiceover(text="Your narration text from storyboard") as tracker:
+    # Animations that play during this narration
+    self.play(Write(title), run_time=tracker.duration)
+    # You can use tracker.duration to sync animation length with speech
+```
+
+### Important Voiceover Guidelines:
+- **Every storyboard scene maps to one `voiceover` context** - use the narration text provided
+- **Use `tracker.duration`** to time animations with narration length
+- **Animations inside the context play while narration speaks** - sync visuals with what's being said
+- **The voiceover audio is automatically rendered** into the final video
+- **Keep animations synchronized** with what's being explained in the narration
+
+### Example Structure:
+```python
+class MyScene(VoiceoverScene):
+    def construct(self):
+        self.set_speech_service(KokoroService(voice="af_sarah", lang="en-us"))
+        
+        # Scene 1
+        with self.voiceover(text="Welcome to this lesson on neural networks") as tracker:
+            title = Text("Neural Networks")
+            self.play(Write(title))
+            self.wait(tracker.duration - 2)
+        
+        self.play(FadeOut(title))
+        
+        # Scene 2
+        with self.voiceover(text="Let's start by understanding the basic architecture") as tracker:
+            diagram = # ... your visual code
+            self.play(Create(diagram))
+```
+
 ## CRITICAL: Concept Caption Bar (Bottom Text Overlay)
 **EVERY scene MUST have a "Concept Caption" text bar at the bottom of the screen** that highlights the key concept being shown:
 - Create a semi-transparent dark rectangle at the bottom (spanning full width, ~1 unit tall)
@@ -84,11 +134,12 @@ You have documentation tools available and you MUST use them before writing any 
 5. **Complete the scene**: Use `edit_file` to add your Scene class code to `./animation_workspace/scene.py`
 
 ## Key Manim Patterns (for reference)
-- Scenes: Subclass `Scene`, implement `construct()`, use `self.play()` for animations
+- Scenes: Subclass `VoiceoverScene`, implement `construct()`, use `self.play()` for animations
 - Mobjects: Circle, Square, Text, MathTex, Arrow, VGroup, Matrix, Table, etc.
 - Animations: Create, FadeIn, FadeOut, Transform, ReplacementTransform, Write, GrowArrow
 - Positioning: `.move_to()`, `.next_to()`, `.shift()`, constants like UP, DOWN, LEFT, RIGHT
 - Animate syntax: `mobject.animate.method()` to animate property changes
+- Voiceover: `with self.voiceover(text="...") as tracker:` to sync narration with animations
 
 ## Horizontal Layout Tips
 - Place titles at the top (UP * 3 or higher)
@@ -99,6 +150,8 @@ You have documentation tools available and you MUST use them before writing any 
 
 ## Detail & Richness Checklist
 Before finalizing your code, verify:
+- [ ] Scene inherits from VoiceoverScene with KokoroService initialized
+- [ ] Each storyboard scene uses voiceover context with the provided narration
 - [ ] Every scene has a concept caption at the bottom
 - [ ] All visual elements are labeled with text
 - [ ] Numbers/values are shown where applicable (not just abstract shapes)
@@ -124,12 +177,14 @@ Before finalizing your code, verify:
 
 Your code should make scene boundaries obvious through clear cleanup animations.
 
-Remember: ALWAYS use your tools to research the documentation before writing code. Complete `./animation_workspace/scene.py` by adding your Scene class with all animations below the existing boilerplate."""
+Remember: ALWAYS use your tools to research the documentation before writing code. Complete `./animation_workspace/scene.py` by adding your VoiceoverScene class with all animations below the existing boilerplate."""
 
 SCENE_BOILERPLATE = """# The videos are meant to be in horizontal format (1920*1080, landscape orientation).
 # Using Manim's default configuration for standard 16:9 aspect ratio.
 
 from manim import *
+from manim_voiceover import VoiceoverScene
+from kokoro_mv import KokoroService
 """
 
 
@@ -157,7 +212,8 @@ def format_storyboard_prompt(
     storyboard_text = ""
     for i, scene in enumerate(storyboard.scenes):
         storyboard_text += f"## Scene {i+1}\n"
-        storyboard_text += scene.to_text() + '\n'
+        storyboard_text += f"**Visual Description:** {scene.visual_description}\n"
+        storyboard_text += f"**Narration (use in voiceover):** \"{scene.narration}\"\n\n"
 
     # Build series context
     series_context = f"""# Document Context
@@ -216,11 +272,14 @@ This is **Part {topic_index + 1} of {total_topics}** in the series on "{breakdow
 
 # Storyboard: {storyboard.topic_name}
 
-You will implement this storyboard as a Manim animation. The visual descriptions specify what to render; the narration is for audio only (don't render narration text).
+You will implement this storyboard as a Manim animation with Kokoro voiceover narration. Each scene includes:
+- **Visual Description**: What to render on screen
+- **Narration**: The text to pass to `self.voiceover(text="...")`
 
 ## Scene 0: Opening Frame
 Display a brief series header like "Part {topic_index + 1}/{total_topics}: {breakdown.document_title}" at the top (small, subtle), then a hook on what we will learn in this topic.
 **Concept Caption:** "Understanding {topic_name_short}"
+**Narration:** "Welcome to part {topic_index + 1} of our series on {breakdown.document_title}. {current_topic.summary}"
 
 {storyboard_text}
 
@@ -229,16 +288,20 @@ After the last storyboard scene, add a closing sequence:
 1. Fade out the current content
 2. Show a summary of key takeaways from this topic (use the Key Takeaways above)
 {next_preview}
+**Narration:** "To recap: [summarize key takeaways]. {f'Next time, we will explore {next_topic.name}.' if next_topic else 'Thanks for watching!'}"
 
 ---
 
 # Implementation Notes
-1. Add ONE Scene class with all animations in `construct()`
-2. Use smooth transitions (FadeOut/FadeIn/Transform) between scenes
-3. HORIZONTAL FORMAT: Standard 16:9 aspect ratio - use horizontal space effectively
-4. Complete `./animation_workspace/scene.py` below the existing boilerplate
-5. Use the document context and topic explanation to ensure accurate technical content
-6. The opening should briefly acknowledge the series context (part X of Y)
-7. The closing should tease the next topic to encourage continued viewing
+1. Add ONE Scene class that **inherits from VoiceoverScene** (not Scene)
+2. Initialize Kokoro TTS: `self.set_speech_service(KokoroService(voice="af_sarah", lang="en-us"))`
+3. Wrap each scene's animations with `with self.voiceover(text="...") as tracker:`
+4. Use the **narration text provided above** for each scene's voiceover
+5. Use smooth transitions (FadeOut/FadeIn/Transform) between scenes
+6. HORIZONTAL FORMAT: Standard 16:9 aspect ratio - use horizontal space effectively
+7. Complete `./animation_workspace/scene.py` below the existing boilerplate
+8. Use the document context and topic explanation to ensure accurate technical content
+9. The opening should briefly acknowledge the series context (part X of Y)
+10. The closing should tease the next topic to encourage continued viewing
 """
     return storyboard_prompt

@@ -1,0 +1,266 @@
+[
+  {
+    "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+    "input_data": {
+      "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3",
+    "final_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3"
+  },
+  {
+    "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+    "input_data": {
+      "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3",
+    "final_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3"
+  },
+  {
+    "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+    "input_data": {
+      "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3",
+    "final_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3"
+  },
+  {
+    "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+    "input_data": {
+      "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3",
+    "final_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3"
+  },
+  {
+    "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+    "input_data": {
+      "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3",
+    "final_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3"
+  },
+  {
+    "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+    "input_data": {
+      "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3",
+    "final_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3"
+  },
+  {
+    "input_text": "But there is a catch. Just because a model can swallow a million words, doesn't mean it can digest them. As the input grows, a phenomenon called 'Context Rot' sets in. The model's attention gets diluted, drowning in the noise of its own memory.",
+    "input_data": {
+      "input_text": "But there is a catch. Just because a model can swallow a million words, doesn't mean it can digest them. As the input grows, a phenomenon called 'Context Rot' sets in. The model's attention gets diluted, drowning in the noise of its own memory.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "67096adfa361e4ecd1758afe6ad7af76a4bf9d58a0afec91f73a570c3409bdc9.mp3",
+    "final_audio": "67096adfa361e4ecd1758afe6ad7af76a4bf9d58a0afec91f73a570c3409bdc9.mp3"
+  },
+  {
+    "input_text": "It's not that the models simply forget. They can easily find a specific password hidden in a book\u2014that's the 'needle in a haystack' problem. But ask them to track a complex plot or connect an idea from page one to page five hundred? That's where they crumble.",
+    "input_data": {
+      "input_text": "It's not that the models simply forget. They can easily find a specific password hidden in a book\u2014that's the 'needle in a haystack' problem. But ask them to track a complex plot or connect an idea from page one to page five hundred? That's where they crumble.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "3cf7559f218b8751506fdd91015d30f9457d1b41ddd55bf4eb8dc9986c63e3be.mp3",
+    "final_audio": "3cf7559f218b8751506fdd91015d30f9457d1b41ddd55bf4eb8dc9986c63e3be.mp3"
+  },
+  {
+    "input_text": "This degradation isn't subtle. On tasks that require reasoning across the whole text, performance doesn't just dip\u2014it dives off a cliff. The model's physical context window is huge, but its effective reasoning window is surprisingly small.",
+    "input_data": {
+      "input_text": "This degradation isn't subtle. On tasks that require reasoning across the whole text, performance doesn't just dip\u2014it dives off a cliff. The model's physical context window is huge, but its effective reasoning window is surprisingly small.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "fb3a0b9a9b2656315838775c37c4498e0ab5fa243d325b0e73e44e5381e7e199.mp3",
+    "final_audio": "fb3a0b9a9b2656315838775c37c4498e0ab5fa243d325b0e73e44e5381e7e199.mp3"
+  },
+  {
+    "input_text": "Think of it like a computer. Trying to stuff a million-token prompt into the model's active attention is like trying to load a terabyte database entirely into your RAM. It's inefficient, expensive, and frankly, overwhelming.",
+    "input_data": {
+      "input_text": "Think of it like a computer. Trying to stuff a million-token prompt into the model's active attention is like trying to load a terabyte database entirely into your RAM. It's inefficient, expensive, and frankly, overwhelming.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "a1850edb48584ae1ea7e323edfc630f63d792fa54e62069f801468c95b0fd641.mp3",
+    "final_audio": "a1850edb48584ae1ea7e323edfc630f63d792fa54e62069f801468c95b0fd641.mp3"
+  },
+  {
+    "input_text": "Computer science solved this decades ago with 'out-of-core' algorithms. If a dataset is too big for memory, you don't crash. You leave the data on the disk, and you fetch only the chunks you need, when you need them.",
+    "input_data": {
+      "input_text": "Computer science solved this decades ago with 'out-of-core' algorithms. If a dataset is too big for memory, you don't crash. You leave the data on the disk, and you fetch only the chunks you need, when you need them.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "b4663902f7e579f9472484d4c6eeaccb15906758604facf09a345ea481d2c316.mp3",
+    "final_audio": "b4663902f7e579f9472484d4c6eeaccb15906758604facf09a345ea481d2c316.mp3"
+  },
+  {
+    "input_text": "This is the core idea behind 'Inference-Time Scaling.' Instead of feeding the prompt into the neural network, we treat the prompt as an external environment. The model uses code to browse the text, read specific snippets, and reason iteratively.",
+    "input_data": {
+      "input_text": "This is the core idea behind 'Inference-Time Scaling.' Instead of feeding the prompt into the neural network, we treat the prompt as an external environment. The model uses code to browse the text, read specific snippets, and reason iteratively.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "0415fec30ef3f74b800e555bc4e0535271ce292328cf0d62819eebf8478a2ffc.mp3",
+    "final_audio": "0415fec30ef3f74b800e555bc4e0535271ce292328cf0d62819eebf8478a2ffc.mp3"
+  },
+  {
+    "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+    "input_data": {
+      "input_text": "Welcome to part 1 of our series on Recursive Language Models. Despite valid context windows extending to millions of tokens, frontier models like GPT-5 suffer from 'context rot,' where reasoning capabilities degrade as input length increases. This topic explores why simply increasing context size is insufficient for complex tasks and introduces the motivation behind inference-time scaling.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3",
+    "final_audio": "6f085cf0e21c628ac9ea4c3c125b49825dd2b5fc7c3f07086f013110fcaaa6c7.mp3"
+  },
+  {
+    "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+    "input_data": {
+      "input_text": "In the world of artificial intelligence, we are witnessing an explosion of memory. Modern language models can now technically ingest entire libraries\u2014millions of words\u2014in a single prompt. It sounds like the ultimate super-power: perfect recall at an infinite scale.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3",
+    "final_audio": "074be04bb8c0bce187eac4c6e565c2aa28bb6e95ad4bebe0287a2fe946d16955.mp3"
+  },
+  {
+    "input_text": "But there is a catch. Just because a model can swallow a million words, doesn't mean it can digest them. As the input grows, a phenomenon called 'Context Rot' sets in. The model's attention gets diluted, drowning in the noise of its own memory.",
+    "input_data": {
+      "input_text": "But there is a catch. Just because a model can swallow a million words, doesn't mean it can digest them. As the input grows, a phenomenon called 'Context Rot' sets in. The model's attention gets diluted, drowning in the noise of its own memory.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "67096adfa361e4ecd1758afe6ad7af76a4bf9d58a0afec91f73a570c3409bdc9.mp3",
+    "final_audio": "67096adfa361e4ecd1758afe6ad7af76a4bf9d58a0afec91f73a570c3409bdc9.mp3"
+  },
+  {
+    "input_text": "It's not that the models simply forget. They can easily find a specific password hidden in a book\u2014that's the 'needle in a haystack' problem. But ask them to track a complex plot or connect an idea from page one to page five hundred? That's where they crumble.",
+    "input_data": {
+      "input_text": "It's not that the models simply forget. They can easily find a specific password hidden in a book\u2014that's the 'needle in a haystack' problem. But ask them to track a complex plot or connect an idea from page one to page five hundred? That's where they crumble.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "3cf7559f218b8751506fdd91015d30f9457d1b41ddd55bf4eb8dc9986c63e3be.mp3",
+    "final_audio": "3cf7559f218b8751506fdd91015d30f9457d1b41ddd55bf4eb8dc9986c63e3be.mp3"
+  },
+  {
+    "input_text": "This degradation isn't subtle. On tasks that require reasoning across the whole text, performance doesn't just dip\u2014it dives off a cliff. The model's physical context window is huge, but its effective reasoning window is surprisingly small.",
+    "input_data": {
+      "input_text": "This degradation isn't subtle. On tasks that require reasoning across the whole text, performance doesn't just dip\u2014it dives off a cliff. The model's physical context window is huge, but its effective reasoning window is surprisingly small.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "fb3a0b9a9b2656315838775c37c4498e0ab5fa243d325b0e73e44e5381e7e199.mp3",
+    "final_audio": "fb3a0b9a9b2656315838775c37c4498e0ab5fa243d325b0e73e44e5381e7e199.mp3"
+  },
+  {
+    "input_text": "Think of it like a computer. Trying to stuff a million-token prompt into the model's active attention is like trying to load a terabyte database entirely into your RAM. It's inefficient, expensive, and frankly, overwhelming.",
+    "input_data": {
+      "input_text": "Think of it like a computer. Trying to stuff a million-token prompt into the model's active attention is like trying to load a terabyte database entirely into your RAM. It's inefficient, expensive, and frankly, overwhelming.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "a1850edb48584ae1ea7e323edfc630f63d792fa54e62069f801468c95b0fd641.mp3",
+    "final_audio": "a1850edb48584ae1ea7e323edfc630f63d792fa54e62069f801468c95b0fd641.mp3"
+  },
+  {
+    "input_text": "Computer science solved this decades ago with 'out-of-core' algorithms. If a dataset is too big for memory, you don't crash. You leave the data on the disk, and you fetch only the chunks you need, when you need them.",
+    "input_data": {
+      "input_text": "Computer science solved this decades ago with 'out-of-core' algorithms. If a dataset is too big for memory, you don't crash. You leave the data on the disk, and you fetch only the chunks you need, when you need them.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "b4663902f7e579f9472484d4c6eeaccb15906758604facf09a345ea481d2c316.mp3",
+    "final_audio": "b4663902f7e579f9472484d4c6eeaccb15906758604facf09a345ea481d2c316.mp3"
+  },
+  {
+    "input_text": "This is the core idea behind 'Inference-Time Scaling.' Instead of feeding the prompt into the neural network, we treat the prompt as an external environment. The model uses code to browse the text, read specific snippets, and reason iteratively.",
+    "input_data": {
+      "input_text": "This is the core idea behind 'Inference-Time Scaling.' Instead of feeding the prompt into the neural network, we treat the prompt as an external environment. The model uses code to browse the text, read specific snippets, and reason iteratively.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "0415fec30ef3f74b800e555bc4e0535271ce292328cf0d62819eebf8478a2ffc.mp3",
+    "final_audio": "0415fec30ef3f74b800e555bc4e0535271ce292328cf0d62819eebf8478a2ffc.mp3"
+  },
+  {
+    "input_text": "The result? We stop the rot. By processing information in manageable pieces, we can extend the reasoning capabilities of models by orders of magnitude. It turns out the secret to reading a long book isn't a bigger brain\u2014it's learning how to turn the pages.",
+    "input_data": {
+      "input_text": "The result? We stop the rot. By processing information in manageable pieces, we can extend the reasoning capabilities of models by orders of magnitude. It turns out the secret to reading a long book isn't a bigger brain\u2014it's learning how to turn the pages.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "1cf3f350be29a56eb177a62557269b64649c54ccd62205036cf157a60d3ebe5b.mp3",
+    "final_audio": "1cf3f350be29a56eb177a62557269b64649c54ccd62205036cf157a60d3ebe5b.mp3"
+  },
+  {
+    "input_text": "To recap: Physical context capacity does not equal effective reasoning capacity; models suffer from 'context rot' as inputs grow. The proposed solution shifts focus from architectural changes to inference-time compute scaling. Next time, we will explore Recursive Language Models (RLMs): The Core Architecture.",
+    "input_data": {
+      "input_text": "To recap: Physical context capacity does not equal effective reasoning capacity; models suffer from 'context rot' as inputs grow. The proposed solution shifts focus from architectural changes to inference-time compute scaling. Next time, we will explore Recursive Language Models (RLMs): The Core Architecture.",
+      "service": "kokoro_self",
+      "voice": "af_sarah",
+      "lang": "en-us",
+      "volume": 1.0
+    },
+    "original_audio": "b5921b9200d38c11ff22874f8de51c246638a2fbf70bd7273d8c67975d890528.mp3",
+    "final_audio": "b5921b9200d38c11ff22874f8de51c246638a2fbf70bd7273d8c67975d890528.mp3"
+  }
+]

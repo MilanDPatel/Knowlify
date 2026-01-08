@@ -1,0 +1,172 @@
+1
+00:00:00,000 --> 00:00:03,403
+Welcome to part 1 of our series on Recursive Language
+
+2
+00:00:03,503 --> 00:00:08,031
+Models. Despite valid context windows extending to millions of tokens,
+
+3
+00:00:08,131 --> 00:00:12,592
+frontier models like GPT-5 suffer from 'context rot,' where reasoning
+
+4
+00:00:12,692 --> 00:00:17,286
+capabilities degrade as input length increases. This topic explores why
+
+5
+00:00:17,386 --> 00:00:21,781
+simply increasing context size is insufficient for complex tasks and
+
+6
+00:00:21,881 --> 00:00:25,484
+introduces the motivation behind inference-time scaling.
+
+7
+00:00:27,084 --> 00:00:30,738
+In the world of artificial intelligence, we are witnessing an
+
+8
+00:00:30,838 --> 00:00:35,048
+explosion of memory. Modern language models can now technically ingest
+
+9
+00:00:35,148 --> 00:00:39,295
+entire libraries—millions of words—in a single prompt. It sounds like
+
+10
+00:00:39,395 --> 00:00:43,112
+the ultimate super-power: perfect recall at an infinite scale.
+
+11
+00:00:43,184 --> 00:00:46,450
+But there is a catch. Just because a model can swallow
+
+12
+00:00:46,550 --> 00:00:49,941
+a million words, doesn't mean it can digest them. As the
+
+13
+00:00:50,041 --> 00:00:54,118
+input grows, a phenomenon called 'Context Rot' sets in. The model's
+
+14
+00:00:54,218 --> 00:00:58,108
+attention gets diluted, drowning in the noise of its own memory.
+
+15
+00:00:59,150 --> 00:01:02,735
+It's not that the models simply forget. They can easily find a
+
+16
+00:01:02,835 --> 00:01:07,312
+specific password hidden in a book—that's the 'needle in a haystack' problem.
+
+17
+00:01:07,412 --> 00:01:10,581
+But ask them to track a complex plot or connect an idea
+
+18
+00:01:10,681 --> 00:01:14,266
+from page one to page five hundred? That's where they crumble.
+
+19
+00:01:15,317 --> 00:01:19,164
+This degradation isn't subtle. On tasks that require reasoning
+
+20
+00:01:19,264 --> 00:01:22,983
+across the whole text, performance doesn't just dip—it dives
+
+21
+00:01:23,083 --> 00:01:26,230
+off a cliff. The model's physical context window is
+
+22
+00:01:26,330 --> 00:01:30,241
+huge, but its effective reasoning window is surprisingly small.
+
+23
+00:01:31,284 --> 00:01:33,974
+Think of it like a computer. Trying to stuff
+
+24
+00:01:34,074 --> 00:01:37,716
+a million-token prompt into the model's active attention is
+
+25
+00:01:37,816 --> 00:01:41,077
+like trying to load a terabyte database entirely into
+
+26
+00:01:41,177 --> 00:01:45,200
+your RAM. It's inefficient, expensive, and frankly, overwhelming.
+
+27
+00:01:46,250 --> 00:01:50,411
+Computer science solved this decades ago with 'out-of-core' algorithms. If
+
+28
+00:01:50,511 --> 00:01:53,232
+a dataset is too big for memory, you don't crash.
+
+29
+00:01:53,332 --> 00:01:55,823
+You leave the data on the disk, and you fetch
+
+30
+00:01:55,923 --> 00:01:58,414
+only the chunks you need, when you need them.
+
+31
+00:01:59,484 --> 00:02:03,367
+This is the core idea behind 'Inference-Time Scaling.' Instead of
+
+32
+00:02:03,467 --> 00:02:06,800
+feeding the prompt into the neural network, we treat the
+
+33
+00:02:06,900 --> 00:02:10,293
+prompt as an external environment. The model uses code to
+
+34
+00:02:10,393 --> 00:02:14,216
+browse the text, read specific snippets, and reason iteratively.
+
+35
+00:02:15,250 --> 00:02:19,343
+The result? We stop the rot. By processing information in manageable
+
+36
+00:02:19,443 --> 00:02:23,536
+pieces, we can extend the reasoning capabilities of models by orders
+
+37
+00:02:23,636 --> 00:02:26,927
+of magnitude. It turns out the secret to reading a long
+
+38
+00:02:27,027 --> 00:02:30,750
+book isn't a bigger brain—it's learning how to turn the pages.
+
+39
+00:02:31,850 --> 00:02:35,670
+To recap: Physical context capacity does not equal effective
+
+40
+00:02:35,770 --> 00:02:39,721
+reasoning capacity; models suffer from 'context rot' as inputs
+
+41
+00:02:39,821 --> 00:02:44,098
+grow. The proposed solution shifts focus from architectural changes
+
+42
+00:02:44,198 --> 00:02:48,084
+to inference-time compute scaling. Next time, we will explore
+
+43
+00:02:48,184 --> 00:02:51,742
+Recursive Language Models (RLMs): The Core Architecture.
+

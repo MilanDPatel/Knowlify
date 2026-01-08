@@ -111,4 +111,3 @@ def format_topic_input(topic) -> str:
         "## AtomicTopic Input\n\n"
         f"{topic.to_text()}\n"
     )
-
