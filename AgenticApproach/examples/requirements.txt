@@ -1,0 +1,6 @@
+google-genai
+langchain-google-genai
+python-dotenv
+httpx
+tqdm
+numpy<2
