@@ -1,9 +1,0 @@
-{
-  "code": [
-    ">>> from manim import ArcPolygon",
-    ">>> ap = ArcPolygon([0, 0, 0], [2, 0, 0], [0, 2, 0])",
-    ">>> ap.arcs",
-    "[ArcBetweenPoints, ArcBetweenPoints, ArcBetweenPoints]"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.arc.ArcPolygon.html"
-}

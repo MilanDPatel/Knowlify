@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import RED, GREEN, BLUE",
-    ">>> print(RED)",
-    "#FC6255"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.core.html"
-}

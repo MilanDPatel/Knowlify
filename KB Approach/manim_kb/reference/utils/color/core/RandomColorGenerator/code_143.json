@@ -1,9 +1,0 @@
-{
-  "code": [
-    ">>> from manim import RandomColorGenerator, ManimColor, RED, GREEN, BLUE",
-    ">>> rnd = RandomColorGenerator()",
-    ">>> isinstance(rnd.next(), ManimColor)",
-    "True"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.core.RandomColorGenerator.html"
-}

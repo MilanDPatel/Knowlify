@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import AS2700",
-    ">>> AS2700.B23_BRIGHT_BLUE",
-    "ManimColor('#174F90')"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.AS2700.html"
-}

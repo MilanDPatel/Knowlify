@@ -1,9 +1,0 @@
-{
-  "code": [
-    ">>> from manim import Arrow",
-    ">>> arrow = Arrow(np.array([0, 0, 0]), np.array([1, 1, 0]), buff=0)",
-    ">>> bool(round(arrow.tip.tip_angle, 5) == round(PI/4, 5))",
-    "True"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowTip.html"
-}

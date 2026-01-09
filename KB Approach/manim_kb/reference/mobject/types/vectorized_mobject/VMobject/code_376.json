@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import Circle",
-    ">>> Circle().get_direction()",
-    "'CCW'"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.types.vectorized_mobject.VMobject.html"
-}

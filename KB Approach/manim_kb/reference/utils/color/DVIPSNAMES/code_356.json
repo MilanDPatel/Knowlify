@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import DVIPSNAMES",
-    ">>> DVIPSNAMES.DARKORCHID",
-    "ManimColor('#A4538A')"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.DVIPSNAMES.html"
-}

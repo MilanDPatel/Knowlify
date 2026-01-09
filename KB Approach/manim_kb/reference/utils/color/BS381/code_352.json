@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import BS381",
-    ">>> BS381.OXFORD_BLUE",
-    "ManimColor('#1F3057')"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.BS381.html"
-}

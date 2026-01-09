@@ -73,7 +73,7 @@ class MyScene(VoiceoverScene):
 **EVERY scene MUST have a "Concept Caption" text bar at the bottom of the screen** that highlights the key concept being shown:
 - Create a semi-transparent dark rectangle at the bottom (spanning full width, ~1 unit tall)
 - Display the key concept/idea as white text on this bar (font_size 20-24)
-- Update this caption text when the concept changes using Transform or FadeTransition
+- Update this caption text when the concept changes using ReplacementTransform or FadeOut/FadeIn (NOT Transform, which causes overlap issues)
 - Position: `DOWN * 3.5` to `DOWN * 4.0` (bottom area of the 8-unit tall frame)
 - Example concepts: "Residual connections preserve gradient flow", "Matrix multiplication combines features", "Softmax normalizes attention weights"
 - Keep captions concise but informative (1-2 sentences max)

@@ -1,9 +1,0 @@
-{
-  "code": [
-    ">>> from manim import Arrow",
-    ">>> arrow = Arrow(np.array([0, 0, 0]), np.array([1, 2, 0]))",
-    ">>> round(arrow.tip.length, 3)",
-    "0.35"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.geometry.tips.ArrowTip.html"
-}

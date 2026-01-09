@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import Square, RED",
-    ">>> Square(color=RED).get_color() == RED",
-    "True"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.mobject.mobject.Mobject.html"
-}

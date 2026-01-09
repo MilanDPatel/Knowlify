@@ -1,8 +1,0 @@
-{
-  "code": [
-    ">>> from manim import X11",
-    ">>> X11.BEIGE",
-    "ManimColor('#F5F5DC')"
-  ],
-  "source_url": "https://docs.manim.community/en/stable/reference/manim.utils.color.X11.html"
-}
